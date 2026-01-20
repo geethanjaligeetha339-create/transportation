@@ -1,0 +1,19 @@
+function showInfo(type) {
+    const output = document.getElementById("output");
+
+    if (type === "taxi") {
+        output.innerHTML = "🚕 <b>Taxi Services:</b><br>Available 24/7 for local and long-distance travel.";
+    } 
+    else if (type === "rideshare") {
+        output.innerHTML = "📱 <b>Ride Sharing:</b><br>Book rides using Uber or Ola with live tracking.";
+    } 
+    else if (type === "bus") {
+        output.innerHTML = "🚌 <b>Bus & Metro:</b><br>Check city bus schedules and metro routes.";
+    } 
+    else if (type === "parking") {
+        output.innerHTML = "🅿️ <b>Parking Information:</b><br>Find nearby paid and free parking areas.";
+    } 
+    else if (type === "rental") {
+        output.innerHTML = "🚗 <b>Car Rentals:</b><br>Hourly, daily, and weekly rental services available.";
+    }
+}
